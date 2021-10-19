@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		223A12C1271CD8ED004BC286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A12C0271CD8ED004BC286 /* AppDelegate.swift */; };
 		223A12C3271CD8ED004BC286 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A12C2271CD8ED004BC286 /* SceneDelegate.swift */; };
-		223A12C5271CD8ED004BC286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A12C4271CD8ED004BC286 /* ViewController.swift */; };
+		223A12C5271CD8ED004BC286 /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A12C4271CD8ED004BC286 /* UIKitViewController.swift */; };
 		223A12C8271CD8ED004BC286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223A12C6271CD8ED004BC286 /* Main.storyboard */; };
 		223A12CA271CD8F0004BC286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223A12C9271CD8F0004BC286 /* Assets.xcassets */; };
 		223A12CD271CD8F0004BC286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223A12CB271CD8F0004BC286 /* LaunchScreen.storyboard */; };
+		22EE4016271EC9540093427A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4015271EC9540093427A /* OnboardingViewController.swift */; };
+		22EE4018271ED4890093427A /* CalculatorSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4017271ED4890093427A /* CalculatorSwiftUIView.swift */; };
+		22EE401A271ED4CF0093427A /* SwiftUICalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE4019271ED4CF0093427A /* SwiftUICalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		223A12BD271CD8ED004BC286 /* CalculatorTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223A12C0271CD8ED004BC286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223A12C2271CD8ED004BC286 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		223A12C4271CD8ED004BC286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		223A12C4271CD8ED004BC286 /* UIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
 		223A12C7271CD8ED004BC286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		223A12C9271CD8F0004BC286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		223A12CC271CD8F0004BC286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		223A12CE271CD8F0004BC286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EE4015271EC9540093427A /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		22EE4017271ED4890093427A /* CalculatorSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorSwiftUIView.swift; sourceTree = "<group>"; };
+		22EE4019271ED4CF0093427A /* SwiftUICalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		223A12BF271CD8ED004BC286 /* CalculatorTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				22EE401B271ED4D40093427A /* swiftui */,
+				22EE4013271EC9250093427A /* viewcontroller */,
+				22EE4012271EB9650093427A /* storyboard */,
 				223A12C0271CD8ED004BC286 /* AppDelegate.swift */,
 				223A12C2271CD8ED004BC286 /* SceneDelegate.swift */,
-				223A12C4271CD8ED004BC286 /* ViewController.swift */,
-				223A12C6271CD8ED004BC286 /* Main.storyboard */,
 				223A12C9271CD8F0004BC286 /* Assets.xcassets */,
-				223A12CB271CD8F0004BC286 /* LaunchScreen.storyboard */,
 				223A12CE271CD8F0004BC286 /* Info.plist */,
 			);
 			path = CalculatorTutorial;
+			sourceTree = "<group>";
+		};
+		22EE4012271EB9650093427A /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				223A12C6271CD8ED004BC286 /* Main.storyboard */,
+				223A12CB271CD8F0004BC286 /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		22EE4013271EC9250093427A /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				223A12C4271CD8ED004BC286 /* UIKitViewController.swift */,
+				22EE4015271EC9540093427A /* OnboardingViewController.swift */,
+				22EE4019271ED4CF0093427A /* SwiftUICalculatorViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		22EE401B271ED4D40093427A /* swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				22EE4017271ED4890093427A /* CalculatorSwiftUIView.swift */,
+			);
+			path = swiftui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223A12C5271CD8ED004BC286 /* ViewController.swift in Sources */,
+				22EE401A271ED4CF0093427A /* SwiftUICalculatorViewController.swift in Sources */,
+				22EE4018271ED4890093427A /* CalculatorSwiftUIView.swift in Sources */,
+				223A12C5271CD8ED004BC286 /* UIKitViewController.swift in Sources */,
 				223A12C1271CD8ED004BC286 /* AppDelegate.swift in Sources */,
 				223A12C3271CD8ED004BC286 /* SceneDelegate.swift in Sources */,
+				22EE4016271EC9540093427A /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldrke.calculatortutorial.CalculatorTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldrke.calculatortutorial.CalculatorTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

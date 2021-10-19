@@ -7,8 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class UIKitViewController: UIViewController {
 
     @IBOutlet weak var lblWorkingArea: UILabel!
     @IBOutlet weak var lblResultArea: UILabel!
@@ -17,9 +16,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        // Do any additional setup after loading the view.
+
+        // swift ui project calculator is the best feelings of all time of the thing we all believe on
+
+    }
 
     // MARK : - click functions in calculator
 

@@ -1,17 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zRi-7p-QJm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding View Controller-->
+        <scene sceneID="btz-Zy-Bhj">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="zRi-7p-QJm" customClass="OnboardingViewController" customModule="CalculatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ioc-kE-7JD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caluculator SwiftUI and UIKit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-Hu-tCd">
+                                <rect key="frame" x="0.0" y="121" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIkit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PW-Iq-cSW">
+                                <rect key="frame" x="0.0" y="318" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftUI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHA-0t-QJI">
+                                <rect key="frame" x="0.0" y="230" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NBb-DE-yZc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7PW-Iq-cSW" firstAttribute="leading" secondItem="EHA-0t-QJI" secondAttribute="leading" id="1sq-w8-msb"/>
+                            <constraint firstItem="Y9N-Hu-tCd" firstAttribute="top" secondItem="NBb-DE-yZc" secondAttribute="top" constant="77" id="FE9-3h-g29"/>
+                            <constraint firstItem="Y9N-Hu-tCd" firstAttribute="centerX" secondItem="7PW-Iq-cSW" secondAttribute="centerX" id="Pj7-yI-ict"/>
+                            <constraint firstItem="EHA-0t-QJI" firstAttribute="top" secondItem="Y9N-Hu-tCd" secondAttribute="bottom" constant="88" id="RA8-IR-RHc"/>
+                            <constraint firstItem="EHA-0t-QJI" firstAttribute="leading" secondItem="NBb-DE-yZc" secondAttribute="leading" id="W1d-8j-CaC"/>
+                            <constraint firstItem="7PW-Iq-cSW" firstAttribute="trailing" secondItem="EHA-0t-QJI" secondAttribute="trailing" id="WO1-0M-n9G"/>
+                            <constraint firstItem="Y9N-Hu-tCd" firstAttribute="leading" secondItem="EHA-0t-QJI" secondAttribute="leading" id="YcL-V5-8kh"/>
+                            <constraint firstItem="NBb-DE-yZc" firstAttribute="trailing" secondItem="EHA-0t-QJI" secondAttribute="trailing" id="acH-Ih-F31"/>
+                            <constraint firstItem="Y9N-Hu-tCd" firstAttribute="trailing" secondItem="EHA-0t-QJI" secondAttribute="trailing" id="e1b-K3-tla"/>
+                            <constraint firstItem="7PW-Iq-cSW" firstAttribute="top" secondItem="EHA-0t-QJI" secondAttribute="bottom" constant="67" id="oFu-pB-ZO5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="swiftUIlbl" destination="EHA-0t-QJI" id="ptw-hN-7Mj"/>
+                        <outlet property="uiKitlbl" destination="7PW-Iq-cSW" id="tPd-y3-L44"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heq-bL-Eb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849.27536231884062" y="70.982142857142847"/>
+        </scene>
+        <!--SwiftUI Calculator View Controller-->
+        <scene sceneID="5jH-tL-xfD">
+            <objects>
+                <viewController storyboardIdentifier="SwiftUICalculatorViewController" id="SP8-cD-ixL" customClass="SwiftUICalculatorViewController" customModule="CalculatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5YC-Am-7G4" customClass="Cal">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4S-0B-XBS" customClass="CalculatorSwiftUIView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nv4-Bz-GVl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nv4-Bz-GVl" firstAttribute="trailing" secondItem="b4S-0B-XBS" secondAttribute="trailing" id="MTL-fv-3pb"/>
+                            <constraint firstItem="b4S-0B-XBS" firstAttribute="leading" secondItem="nv4-Bz-GVl" secondAttribute="leading" id="SnY-Ex-EZI"/>
+                            <constraint firstItem="b4S-0B-XBS" firstAttribute="top" secondItem="nv4-Bz-GVl" secondAttribute="top" id="h99-qt-san"/>
+                            <constraint firstItem="b4S-0B-XBS" firstAttribute="bottom" secondItem="nv4-Bz-GVl" secondAttribute="bottom" id="hOd-ND-Oh7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theContainer" destination="b4S-0B-XBS" id="BlY-yP-l0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8f-jc-QbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298.55072463768118" y="-265.17857142857144"/>
+        </scene>
+        <!--Kit View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIKitViewController" id="BYZ-38-t0r" customClass="UIKitViewController" customModule="CalculatorTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,10 +383,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="114"/>
+            <point key="canvasLocation" x="301" y="437"/>
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
