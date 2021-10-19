@@ -26,7 +26,6 @@ class SwiftUICalculatorViewController: UIViewController {
         theContainer.addSubview(child.view)
 
     }
-    
 
     /*
     // MARK: - Navigation
